@@ -1,4 +1,4 @@
-# Chatito_Chn_Tools Chatito中文工具
+# Chatito中文工具 － Chatito_Chn_Tools 
 
 > Attention：理论上这个功能只需要对Chatito的js代码进行稍微的修改就可以实现，但由于本人不是很了解js，本着快速解决问题的想法构建了一个简单的处理代码。
 
