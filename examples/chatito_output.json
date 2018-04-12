@@ -1,0 +1,224 @@
+﻿{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "上海 到 珠海 怎么去",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 0, "end": 2, "value": "上海", "entity": "departure_city"},
+          {"start": 5, "end": 7, "value": "珠海", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "查询 上海 到 汕头 车票",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 3, "end": 5, "value": "上海", "entity": "departure_city"},
+          {"start": 8, "end": 10, "value": "汕头", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "查询 上海 到 珠海 车票",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 3, "end": 5, "value": "上海", "entity": "departure_city"},
+          {"start": 8, "end": 10, "value": "珠海", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "去 汕头 从 北京 出发怎么走",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 2, "end": 4, "value": "汕头", "entity": "arrival_city"},
+          {"start": 7, "end": 9, "value": "北京", "entity": "departure_city"}
+        ]
+      },
+      {
+        "text": "查询 广州 到 南京 车票",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 3, "end": 5, "value": "广州", "entity": "departure_city"},
+          {"start": 8, "end": 10, "value": "南京", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "去 南京 从 广州 出发怎么走",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 2, "end": 4, "value": "南京", "entity": "arrival_city"},
+          {"start": 7, "end": 9, "value": "广州", "entity": "departure_city"}
+        ]
+      },
+      {
+        "text": "上海 到 南京 怎么去",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 0, "end": 2, "value": "上海", "entity": "departure_city"},
+          {"start": 5, "end": 7, "value": "南京", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "去 南京 从 上海 出发怎么走",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 2, "end": 4, "value": "南京", "entity": "arrival_city"},
+          {"start": 7, "end": 9, "value": "上海", "entity": "departure_city"}
+        ]
+      },
+      {
+        "text": "去 汕头 从 上海 出发怎么走",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 2, "end": 4, "value": "汕头", "entity": "arrival_city"},
+          {"start": 7, "end": 9, "value": "上海", "entity": "departure_city"}
+        ]
+      },
+      {
+        "text": "去 汕头 从 广州 出发怎么走",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 2, "end": 4, "value": "汕头", "entity": "arrival_city"},
+          {"start": 7, "end": 9, "value": "广州", "entity": "departure_city"}
+        ]
+      },
+      {
+        "text": "广州 到 珠海 怎么去",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 0, "end": 2, "value": "广州", "entity": "departure_city"},
+          {"start": 5, "end": 7, "value": "珠海", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "北京 到 珠海 怎么去",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 0, "end": 2, "value": "北京", "entity": "departure_city"},
+          {"start": 5, "end": 7, "value": "珠海", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "查询 广州 到 汕头 车票",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 3, "end": 5, "value": "广州", "entity": "departure_city"},
+          {"start": 8, "end": 10, "value": "汕头", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "查询 北京 到 汕头 车票",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 3, "end": 5, "value": "北京", "entity": "departure_city"},
+          {"start": 8, "end": 10, "value": "汕头", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "广州 到 汕头 怎么去",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 0, "end": 2, "value": "广州", "entity": "departure_city"},
+          {"start": 5, "end": 7, "value": "汕头", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "查询 北京 到 珠海 车票",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 3, "end": 5, "value": "北京", "entity": "departure_city"},
+          {"start": 8, "end": 10, "value": "珠海", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "去 珠海 从 广州 出发怎么走",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 2, "end": 4, "value": "珠海", "entity": "arrival_city"},
+          {"start": 7, "end": 9, "value": "广州", "entity": "departure_city"}
+        ]
+      },
+      {
+        "text": "查询 北京 到 南京 车票",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 3, "end": 5, "value": "北京", "entity": "departure_city"},
+          {"start": 8, "end": 10, "value": "南京", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "北京 到 汕头 怎么去",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 0, "end": 2, "value": "北京", "entity": "departure_city"},
+          {"start": 5, "end": 7, "value": "汕头", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "查询 广州 到 珠海 车票",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 3, "end": 5, "value": "广州", "entity": "departure_city"},
+          {"start": 8, "end": 10, "value": "珠海", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "广州 到 南京 怎么去",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 0, "end": 2, "value": "广州", "entity": "departure_city"},
+          {"start": 5, "end": 7, "value": "南京", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "北京 到 南京 怎么去",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 0, "end": 2, "value": "北京", "entity": "departure_city"},
+          {"start": 5, "end": 7, "value": "南京", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "去 珠海 从 北京 出发怎么走",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 2, "end": 4, "value": "珠海", "entity": "arrival_city"},
+          {"start": 7, "end": 9, "value": "北京", "entity": "departure_city"}
+        ]
+      },
+      {
+        "text": "去 珠海 从 上海 出发怎么走",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 2, "end": 4, "value": "珠海", "entity": "arrival_city"},
+          {"start": 7, "end": 9, "value": "上海", "entity": "departure_city"}
+        ]
+      },
+      {
+        "text": "查询 上海 到 南京 车票",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 3, "end": 5, "value": "上海", "entity": "departure_city"},
+          {"start": 8, "end": 10, "value": "南京", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "上海 到 汕头 怎么去",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 0, "end": 2, "value": "上海", "entity": "departure_city"},
+          {"start": 5, "end": 7, "value": "汕头", "entity": "arrival_city"}
+        ]
+      },
+      {
+        "text": "去 南京 从 北京 出发怎么走",
+        "intent": "query_travel",
+        "entities": [
+          {"start": 2, "end": 4, "value": "南京", "entity": "arrival_city"},
+          {"start": 7, "end": 9, "value": "北京", "entity": "departure_city"}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+%[query_travel]
+    查询 @[departure_city] 到 @[arrival_city]车票
+    @[departure_city]到 @[arrival_city]怎么去
+    去 @[arrival_city]从 @[departure_city]出发怎么走
+
+@[departure_city]
+    北京
+    广州
+    上海
+@[arrival_city]
+    汕头
+    南京
+    珠海
