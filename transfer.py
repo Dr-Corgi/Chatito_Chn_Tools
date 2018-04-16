@@ -17,21 +17,28 @@ def transfer(fpath_in="./examples/chatito_output.json",
     new_common_examples = list()
 
     for exmp in common_examples:
-        exmp_text = "".join(exmp['text'].split(" "))
+        exmp_text = "".join(exmp['text'].split(" "))+"\n"
         exmp_intent = exmp['intent']
         exmp_entities = exmp['entities']
 
         new_exmp_entities = list()
 
-        start_with_entity = 0
+        displayment = 0
 
         for idx, entity in enumerate(exmp_entities):
             if idx == 0:
-                if entity['start'] > 0:
-                    start_with_entity = 1
+                if entity['start'] == 0:
+                    displayment = 0
+                else:
+                    displayment = 1
+            else:
+                if entity['start'] - exmp_entities[idx-1]['end'] == 1:
+                    displayment = displayment + 1
+                else:
+                    displayment = displayment + 2
 
-            new_exmp_entities.append({"start": (entity['start'] - (2 * idx + start_with_entity)),
-                                      "end": (entity['end'] - (2 * idx + start_with_entity)),
+            new_exmp_entities.append({"start": (entity['start'] - displayment),
+                                      "end": (entity['end'] - displayment),
                                       "value": entity['value'],
                                       "entity": entity['entity']})
 
@@ -50,4 +57,4 @@ def transfer(fpath_in="./examples/chatito_output.json",
 
 
 if __name__ == "__main__":
-    transfer("./examples/chatito_output_chn.json", "./examples/chatito_output_chn2.json")
+    transfer()
