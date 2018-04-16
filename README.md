@@ -1,1 +1,14 @@
-# Chatito_Chn_Tools
+# Chatito中文工具 － Chatito_Chn_Tools 
+
+> Attention：理论上这个功能只需要对Chatito的js代码进行稍微的修改就可以实现，但由于本人不是很了解js，本着快速解决问题的想法构建了一个简单的处理代码。
+
+[Chatito](https://rodrigopivi.github.io/Chatito/)是一个非常简单易用的RASA_NLU标注数据构建工具。
+由于RASA本身没有针对中文的扩展，Chatito工具在其实现中沿用了空格作为单词的分隔符。但当我们使用[支持中文的RASA_NLU框架](https://github.com/crownpku/Rasa_NLU_Chi)时，我们同样也希望能够利用Chatito快速构建标注语料。
+
+Chatito在生成标注语料时会在标记实体的两侧生成空格，这会给标记实体的位置造成偏差。例如：  
+“查询**北京**到**汕头**车票”句子中，两个实体的标记位置\[start, end\]分别为北京\[2,4\]和汕头\[5,7\]，而  
+“查询 **北京** 到 **汕头** 车票”句子中为北京\[3,5\]和汕头\[8,10\]。  
+
+那么如果希望将不分词的句子传输给RASA_NLU模块进行识别，就需要对数据进行以下处理：  
+1. 移除句子中的空格   
+2. 修正相应的位置索引。
